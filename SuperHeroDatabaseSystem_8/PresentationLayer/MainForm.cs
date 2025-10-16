@@ -39,7 +39,7 @@ namespace SuperHeroDatabaseSystem_8.PresentationLayer
                 Superhero hero = new Superhero(id, name, age, power, score);
                 manager.AddHero(hero);
 
-                MessageBox.Show("Superhero added successfully! All superheroes are located in the bin directory as superheroes.txt.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Superhero added successfully! All superheroes are saved in superheroes.txt file.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ClearFields();
                 LoadHeroes();
             }
@@ -78,7 +78,7 @@ namespace SuperHeroDatabaseSystem_8.PresentationLayer
                 Superhero hero = new Superhero(id, name, age, power, score);
                 manager.UpdateHero(hero);
 
-                MessageBox.Show("Superhero updated successfully! All superheroes are located in the bin directory as superheroes.txt.", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Superhero updated successfully! All superheroes are saved in superheroes.txt.file", "Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadHeroes();
             }
             catch (Exception ex)
